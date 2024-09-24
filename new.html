@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        margin-left: 30px;
+    }
+    input[type="checkbox"]{
+        accent-color:orange;
+        
+    }
+    input[type="radio"]{
+        accent-color: red;
+    }
+    input[type="range"]{
+        accent-color: blue;
+    }
+    progress{
+        accent-color:purple;
+        
+    }</style>
+</head>
+<body>
+    <form>
+        <h1>Known languages</h1><br>
+        <input type="checkbox" value="Telugu">Telugu<br>
+        <input type="checkbox"value=English>English<br>
+        <input type="checkbox" value="Hindi">Hindi<br><br>
+
+        <h1>Select gender</h1><br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br><br>
+        <h1>volume progress</h1><br>
+        <input type="range"><br>
+        <h1>Downloading in progress</h1><br>
+        <label for="file">downloading progress:</label>
+        <progress id="file" value="30" max="50">82</progress>
+    </form>
+</body>
+</html>
